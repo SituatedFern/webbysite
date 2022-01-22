@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <nav className="flex justify-between items-center h-16 bg-white text black relative shadow-sm font-mono">
       <div className="pl-8">
         <Link href="/">Ashwin Gnanam</Link>
       </div>
-      <div className="px-4 cursor-pointer md:hidden">
+      <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           className="w-6 h-6"
           fill="none"
