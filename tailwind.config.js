@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         jetbrains: "Jetbrains Mono",
+        poppins: "Poppins",
       },
     },
   },

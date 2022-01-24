@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from "../components/Dropdown";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
     <div>
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
+      <Hero />
     </div>
   );
 }
