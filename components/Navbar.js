@@ -8,7 +8,10 @@ const Navbar = ({ toggle }) => {
         <div className="pl-8 text-[#48C5F7] hover:text-[#FF4949]">
           <Link href="/">Ashwin Gnanam</Link>
         </div>
-        <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
+        <div
+          className="px-4 cursor-pointer md:hidden text-white"
+          onClick={toggle}
+        >
           <svg
             className="w-6 h-6"
             fill="none"
