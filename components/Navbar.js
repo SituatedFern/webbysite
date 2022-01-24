@@ -4,8 +4,8 @@ import Link from "next/link";
 const Navbar = ({ toggle }) => {
   return (
     <>
-      <nav className="flex justify-between items-center h-16 bg-[#0F0F0F] relative shadow-sm font-mono">
-        <div className="pl-8 font-bold text-[#48C5F7] hover:text-[#FF4949]">
+      <nav className="flex justify-between items-center h-16 bg-[#0F0F0F] relative shadow-sm font-jetbrains">
+        <div className="pl-8 text-[#48C5F7] hover:text-[#FF4949]">
           <Link href="/">Ashwin Gnanam</Link>
         </div>
         <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
