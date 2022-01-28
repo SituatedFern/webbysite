@@ -1,4 +1,11 @@
 import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+
+library.add(fab);
 
 const Footer = () => {
   return (
@@ -23,23 +30,35 @@ const Footer = () => {
             <h4 className="text-lg sm:text-base text-white mb-9 font-poppins relative">
               Find me on:
             </h4>
-            <ul className="list-none font-jetbrains">
-              <li className="mb-2.5">
-                <a href="/">FAQ</a>
-              </li>
-              <li className="mb-2.5">
-                <a href="/">shipping</a>
-              </li>
-              <li className="mb-2.5">
-                <a href="/">returns</a>
-              </li>
-              <li className="mb-2.5">
-                <a href="/">order status</a>
-              </li>
-              <li className="mb-2.5">
-                <a href="/">payment options</a>
-              </li>
-            </ul>
+            <div className="list-none font-jetbrains text-[35px] mb-2.5">
+              <a target="_blank" href="https://github.com/SituatedFern">
+                <FontAwesomeIcon
+                  className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
+                  icon={["fab", "github"]}
+                />
+              </a>{" "}
+              <a
+                target="_blank"
+                href="https://ca.linkedin.com/in/ashwin-gnanam"
+              >
+                <FontAwesomeIcon
+                  className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
+                  icon={["fab", "linkedin-in"]}
+                />
+              </a>{" "}
+              <a target="_blank" href="https://twitter.com/atgnanam">
+                <FontAwesomeIcon
+                  className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
+                  icon={["fab", "twitter"]}
+                />
+              </a>{" "}
+              <a target="_blank" href="https://atgnanam.medium.com/">
+                <FontAwesomeIcon
+                  className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
+                  icon={["fab", "medium-m"]}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
