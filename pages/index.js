@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import About from "../components/About";
 import Dropdown from "../components/Dropdown";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -30,6 +31,7 @@ export default function Home() {
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Hero />
+      <About />
       <Footer />
     </div>
   );
