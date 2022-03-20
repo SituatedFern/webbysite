@@ -58,12 +58,36 @@ const About = () => {
             link="/"
           />
           <Card
-            title="Project Name"
+            title="Ashwin's Insights - October Issue"
+            date="October 2020"
+            desc="My very first newsletter! A month full of excitement and fireside chats."
+            image="/images/Oct2020Newsletter.jpg"
+            alt="Image of forest that says 'Ashwin's Insights'"
+            link="https://mailchi.mp/723e73e4caa8/ashwins-october-newsletter"
+          />
+          <Card
+            title="Ashwin's Insights - November Issue"
             date="November 2020"
-            desc="This is a brief description of the project and what I did."
-            image="https://source.unsplash.com/random"
+            desc="This month held my very first challenge in TKS. I worked with a group to help the pathcheck foundation with contact tracing in Lousiana. I also got to experiment with a real Harvard Business case study!"
+            image="/images/Nov2020Newsletter.jpg"
+            alt="Snowy Mountain that says 'Ashwin's Insights'"
+            link="https://mailchi.mp/723e73e4caa8/ashwins-october-newsletter"
+          />
+          <Card
+            title="Ashwin's Insights - February Issue"
+            date="February 2021"
+            desc="In the month of February, we kicked off our biggest challenge yet. In 2021, TKS partnered with the United Nations to try and enable more women to access, create, and influence technology."
+            image="/images/Feb2021Newsletter.jpg"
             alt=""
-            link=""
+            link="https://preview.mailerlite.com/i0o0p1/1644595237382789581/d9t3/"
+          />
+          <Card
+            title="Ashwin's Insights - April Issue"
+            date="April 2021"
+            desc="This month, we wrapped up our biggest challenge yet. We needed to create a moonshot company designed to solve one of the world's biggest problems. My group and I chose to tackle the problem of intersection accidents. We created Modero to address this problem (see Modero Article)."
+            image="/images/Apr2021Newsletter.jpg"
+            alt=""
+            link="https://preview.mailerlite.com/l9o7m9"
           />
           <Card
             title="Project Name"
