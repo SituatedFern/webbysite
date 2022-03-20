@@ -7,7 +7,7 @@ const About = () => {
       id="Portfolio"
       className=" bg-black flex flex-col font-poppins text-white"
     >
-      <p className="font-bold text-3xl mt-10 mb-14 ml-14 text-[#FF4949]">
+      <p className="font-bold text-3xl mt-10 mb-14 mx-auto md:ml-14 text-[#FF4949]">
         Portfolio:
       </p>
       <div className="container mx-auto">

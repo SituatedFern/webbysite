@@ -6,7 +6,9 @@ const About = () => {
       id="About"
       className=" bg-black h-screen flex flex-col font-bold font-poppins text-white"
     >
-      <p className="text-3xl mt-10 mb-5 ml-14 text-[#FF4949]">About Me:</p>
+      <p className="text-3xl mt-10 mb-5 mx-auto md:ml-14 text-[#FF4949]">
+        About Me:
+      </p>
       <img
         src={"/images/pfp.jpg"}
         className="h-44 w-44 md:h-64 md:w-64 lg:w-96 lg:h-96 mx-auto mb-10 mt-24 rounded-full border-solid border-sky-500 border-8"
