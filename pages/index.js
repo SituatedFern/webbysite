@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
+import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ export default function Home() {
       <Hero />
       <About />
       <Portfolio />
+      <Newsletter />
       <Footer />
     </div>
   );

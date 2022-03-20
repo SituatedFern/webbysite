@@ -3,12 +3,15 @@ import Card from "./Card";
 
 const About = () => {
   return (
-    <div className=" bg-black flex flex-col font-poppins text-white">
-      <p className="font-bold text-xl mt-10 mb-14 ml-14 text-[#FF4949]">
+    <div
+      id="Portfolio"
+      className=" bg-black flex flex-col font-poppins text-white"
+    >
+      <p className="font-bold text-3xl mt-10 mb-14 ml-14 text-[#FF4949]">
         Portfolio:
       </p>
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 mb-28">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-4 mb-28 mx-auto">
           <Card
             title="The Dangers of AI (and how to avoid them)"
             date="September 2020"

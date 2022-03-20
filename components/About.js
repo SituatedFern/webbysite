@@ -2,13 +2,16 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className=" bg-black h-screen flex flex-col font-bold font-poppins text-white">
-      <p className="text-xl mt-10 mb-5 ml-14 text-[#FF4949]">About Me:</p>
+    <div
+      id="About"
+      className=" bg-black h-screen flex flex-col font-bold font-poppins text-white"
+    >
+      <p className="text-3xl mt-10 mb-5 ml-14 text-[#FF4949]">About Me:</p>
       <img
         src={"/images/pfp.jpg"}
-        className="sm:h-44 sm:w-44 md:h-64 md:w-64 lg:w-96 lg:h-96 mx-auto mb-10 mt-24 rounded-full border-solid border-sky-500 border-8"
+        className="h-44 w-44 md:h-64 md:w-64 lg:w-96 lg:h-96 mx-auto mb-10 mt-24 rounded-full border-solid border-sky-500 border-8"
       ></img>
-      <p className="mx-14 font-jetbrains">
+      <p className="mx-14 font-jetbrains text-sm md:text-lg">
         I am a tech enthusiast, full time Linux user, and an Innovator at The
         Knowledge Society. I have been interested in programming and technology
         for as long as I can remember.I am in my second year at The Knowledge

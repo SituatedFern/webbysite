@@ -10,7 +10,7 @@ library.add(fab);
 const Footer = () => {
   return (
     <>
-      <div className="flex h-1 bg-[#FF4949] shadow-sm" />
+      <div id="Footer" className="flex h-1 bg-[#FF4949] shadow-sm" />
       <footer className="p-10 bg-[#0F0F0F] text-white">
         <div className="flex flex-wrap">
           <div className="w-1/2 p-2">

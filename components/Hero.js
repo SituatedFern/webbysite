@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,9 +16,11 @@ const Hero = () => {
           <p className=" text-white hover:text-[#48C5F7]">Hey,</p>
         </div>
       </div>
-      <p className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl text-[#8FFFA8] mb-14 hover:text-[#FF4949] cursor-pointer z-30">
-        I'm Ashwin!
-      </p>
+      <Link href="#About">
+        <p className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl text-[#8FFFA8] mb-14 hover:text-[#FF4949] cursor-pointer z-30">
+          I'm Ashwin!
+        </p>
+      </Link>
     </div>
   );
 };

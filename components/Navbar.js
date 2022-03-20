@@ -28,18 +28,18 @@ const Navbar = ({ toggle }) => {
           </svg>
         </div>
         <div className="pr-8 md:block hidden italic">
-          <Link href="/">
+          <Link href="#About">
             <a className="p-4 text-[#48C5F7] hover:text-[#FF4949]">About</a>
           </Link>
-          <Link href="/">
+          <Link href="#Portfolio">
             <a className="p-4 text-[#48C5F7] hover:text-[#FF4949]">Portfolio</a>
           </Link>
-          <Link href="/">
+          <Link href="#Newsletter">
             <a className="p-4 text-[#48C5F7] hover:text-[#FF4949]">
               Newsletter
             </a>
           </Link>
-          <Link href="/">
+          <Link href="#Footer">
             <a className="p-4 text-[#48C5F7] hover:text-[#FF4949]">Contact</a>
           </Link>
         </div>
