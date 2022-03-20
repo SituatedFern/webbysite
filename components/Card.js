@@ -19,7 +19,7 @@ const Card = () => {
             300
           </li>
           <li>
-            <strong>Likes </strong>
+            <strong>Likes: </strong>
             400
           </li>
         </ul>
