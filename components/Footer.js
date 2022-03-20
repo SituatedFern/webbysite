@@ -17,10 +17,7 @@ const Footer = () => {
             <h4 className="text-lg sm:text-base text-white mb-9 font-poppins relative">
               Contact
             </h4>
-            <ul className="list-none font-jetbrains">
-              <li className="mb-2.5">
-                <a href="/">+1 416 896 2340</a>
-              </li>
+            <ul className="list-none font-jetbrains text-xs md:text-lg">
               <li className="mb-2.5">
                 <a href="/">atgnanam@outlook.com</a>
               </li>
