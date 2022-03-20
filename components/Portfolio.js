@@ -9,15 +9,51 @@ const About = () => {
       </p>
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 mb-28">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
+          <Card
+            title="Project Name"
+            date="November 2020"
+            desc="This is a brief description of the project and what I did."
+          />
         </div>
       </div>
     </div>
