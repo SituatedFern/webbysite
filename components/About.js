@@ -20,9 +20,8 @@ const About = () => {
         Society (TKS). At TKS, I learn about emerging technologies and
         participate in hackathons, some involving large organizations, like the
         UN, IKEA, and the Pathcheck Foundation. I have been with A Few Good Men
-        choir for over five years. I have really enjoyed meeting new people,
-        learning how to read music, and improve my vocal range. I write articles
-        and newsletters about my activites and things that I am interested in.
+        choir for over five years. I write articles and newsletters about my
+        activites and things that I am interested in.
       </p>
     </div>
   );
