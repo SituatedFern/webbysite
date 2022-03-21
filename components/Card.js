@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Card = (props) => {
   return (
-    <Link href={props.link}>
+    <Link href={props.link} passHref>
       <div className="max-w-full md:max-w-sm rounded overflow-hidden shadow-none md:shadow-lg shadow-gray-900 mb-10 cursor-pointer">
         <img src={props.image} alt={props.alt} className="w-full"></img>
         <div className="px-6 py-4">

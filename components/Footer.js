@@ -19,7 +19,7 @@ const Footer = () => {
             </h4>
             <ul className="list-none font-jetbrains text-xs md:text-lg">
               <li className="mb-2.5">
-                <a href="/">atgnanam@outlook.com</a>
+                <Link href="/">atgnanam@outlook.com</Link>
               </li>
             </ul>
           </div>
@@ -28,13 +28,18 @@ const Footer = () => {
               Find me on:
             </h4>
             <div className="list-none font-jetbrains text-[35px] mb-2.5">
-              <a target="_blank" href="https://github.com/SituatedFern">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/SituatedFern"
+              >
                 <FontAwesomeIcon
                   className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
                   icon={["fab", "github"]}
                 />
               </a>{" "}
               <a
+                rel="noreferrer"
                 target="_blank"
                 href="https://ca.linkedin.com/in/ashwin-gnanam"
               >
@@ -43,13 +48,21 @@ const Footer = () => {
                   icon={["fab", "linkedin-in"]}
                 />
               </a>{" "}
-              <a target="_blank" href="https://twitter.com/atgnanam">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/atgnanam"
+              >
                 <FontAwesomeIcon
                   className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
                   icon={["fab", "twitter"]}
                 />
               </a>{" "}
-              <a target="_blank" href="https://atgnanam.medium.com/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://atgnanam.medium.com/"
+              >
                 <FontAwesomeIcon
                   className="hover:text-[#48c5f7] hover:scale-150 transition-all duration-150"
                   icon={["fab", "medium-m"]}

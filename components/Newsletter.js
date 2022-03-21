@@ -36,7 +36,7 @@ function About() {
         className="text-gray-600 text-md md:text-3xl space-y-10"
       >
         <div className="flex items-center font-jetbrains space-x-3">
-          <label for="name">My name is </label>
+          <label htmlFor="name">My name is </label>
           <input
             type="text"
             id="name"
@@ -47,7 +47,7 @@ function About() {
         </div>
 
         <div className="flex items-center font-jetbrains space-x-3">
-          <label for="email">My email is </label>
+          <label htmlFor="email">My email is </label>
           <input
             type="text"
             id="email"

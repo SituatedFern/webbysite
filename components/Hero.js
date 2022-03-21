@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       <Link href="#About">
         <p className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl text-[#8FFFA8] mb-14 hover:text-[#FF4949] cursor-pointer z-30">
-          I'm Ashwin!
+          I&apos;m Ashwin!
         </p>
       </Link>
     </div>
