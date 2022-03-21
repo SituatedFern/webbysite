@@ -92,22 +92,6 @@ const About = () => {
             alt=""
             link="https://preview.mailerlite.com/l9o7m9"
           />
-          <Card
-            title="Project Name"
-            date="November 2020"
-            desc="This is a brief description of the project and what I did."
-            image="https://source.unsplash.com/random"
-            alt=""
-            link=""
-          />
-          <Card
-            title="Project Name"
-            date="November 2020"
-            desc="This is a brief description of the project and what I did."
-            image="https://source.unsplash.com/random"
-            alt=""
-            link=""
-          />
         </div>
       </div>
     </div>
