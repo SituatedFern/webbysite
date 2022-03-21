@@ -1,3 +1,4 @@
+import { addDoc, collection } from "firebase/firestore";
 import React from "react";
 import { useState } from "react";
 import db from "./firebase";
@@ -17,6 +18,8 @@ function About() {
     }, {});
 
     console.log({ formData });
+
+    addDoc(collection(db, "Subscribers"), formData);
   };
 
   return (
