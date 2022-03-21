@@ -1,6 +1,20 @@
 import React from "react";
+import { useState } from "react";
+import db from "./firebase";
 
-const About = () => {
+// function About() {
+//   const [name, setName] = useState();
+//   const [email, setEmail] = useState();
+
+//   const Push = () => {
+//     db.ref("user")
+//       .set({
+//         name: name,
+//         email: email,
+//       })
+//       .catch(alert);
+//   };
+
   return (
     <div
       id="Newsletter"
@@ -18,6 +32,8 @@ const About = () => {
             name="name"
             placeholder="Thorin Oakenshield"
             className="flex-grow bg-transparent border-b-4 border-gray-900 p-2 outline-none text-white focus:border-gray-300"
+            // value={name}
+            // onChange={(e) => setName(e.target.value)}
           />
         </div>
 
@@ -29,14 +45,18 @@ const About = () => {
             name="email"
             placeholder="thorino@hobbit.com"
             className="flex-grow bg-transparent border-b-4 border-gray-900 p-2 outline-none text-white focus:border-gray-300"
+            // value={email}
+            // onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="text-right font-jetbrains">
-          <button className="bg-[#FF4949] text-black py-4 px-8">Submit</button>
+          //add in button: onClick={Push}
+          <button  className="bg-[#FF4949] text-black py-4 px-8">
+            Submit
+          </button>
         </div>
       </form>
     </div>
   );
-};
-
+}
 export default About;
