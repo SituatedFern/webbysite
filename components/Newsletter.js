@@ -2,6 +2,7 @@ import { addDoc, collection } from "firebase/firestore";
 import React from "react";
 import { useState } from "react";
 import db from "./firebase";
+import Modal from "./Modal";
 
 function About() {
   const saveAnswer = (event) => {
@@ -20,6 +21,12 @@ function About() {
     console.log({ formData });
 
     addDoc(collection(db, "Subscribers"), formData);
+  };
+
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal((prev) => !prev);
   };
 
   return (
@@ -57,7 +64,13 @@ function About() {
           />
         </div>
         <div className="text-right font-jetbrains">
-          <button className="bg-[#FF4949] text-black py-4 px-8">Submit</button>
+          <button
+            onClick={openModal}
+            className="bg-[#FF4949] text-black py-4 px-8"
+          >
+            Submit
+          </button>
+          <Modal showModal={showModal} setShowModal={setShowModal} />
         </div>
       </form>
     </div>
