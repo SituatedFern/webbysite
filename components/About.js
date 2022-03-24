@@ -13,7 +13,7 @@ const About = () => {
         src={"/images/pfp.jpg"}
         className="h-44 w-44 md:h-64 md:w-64 lg:w-96 lg:h-96 mx-auto mb-10 mt-24 rounded-full border-solid border-sky-500 border-8"
       ></img>
-      <p className="mx-14 font-jetbrains text-sm md:text-lg">
+      <p className="mx-14 font-jetbrains text-sm md:text-lg mb-10">
         I am a tech enthusiast, full time Linux user, and an Innovator at The
         Knowledge Society. I have been interested in programming and technology
         for as long as I can remember.I am in my second year at The Knowledge
