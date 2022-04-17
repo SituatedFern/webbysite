@@ -3,8 +3,22 @@ import React from "react";
 import { useState } from "react";
 import db from "./firebase";
 import Modal from "./Modal";
+import BadModal from "./BadModal";
+import validator from 'validator';
 
 function About() {
+  const [emailError, setEmailError] = useState('')
+
+  const validateEmail = (e) => {
+    var email = e.target.value
+    setEmailError(false)
+    if (validator.isEmail(email)) {
+      setEmailError(true)
+    } else {
+      setEmailError(false)
+    }
+  }
+
   const saveAnswer = (event) => {
     event.preventDefault();
 
@@ -20,7 +34,10 @@ function About() {
 
     console.log({ formData });
 
-    addDoc(collection(db, "Subscribers"), formData);
+    if (emailError == true) {
+      addDoc(collection(db, "Subscribers"), formData);
+    }
+
     
     event.target.reset();
   };
@@ -29,6 +46,12 @@ function About() {
 
   const openModal = () => {
     setShowModal((prev) => !prev);
+  };
+
+  const [showBadModal, setShowBadModal] = useState(false);
+
+  const openBadModal = () => {
+    setShowBadModal((prev) => !prev);
   };
 
   return (
@@ -62,17 +85,20 @@ function About() {
             id="email"
             name="email"
             placeholder="thorino@hobbit.com"
-            className="flex-grow bg-transparent border-b-4 border-gray-900 p-2 outline-none text-white focus:border-gray-300"
+          className={`switch ${emailError ? "flex-grow bg-transparent border-b-4 border-gray-900 p-2 outline-none text-white focus:border-green-300": "flex-grow bg-transparent border-b-4 border-gray-900 p-2 outline-none text-white focus:border-gray-300"}`}
+          onChange={(e) => validateEmail(e)}
           />
         </div>
+        <span>{emailError}</span>
         <div className="text-right font-jetbrains">
           <button
-            onClick={openModal}
+            onClick={emailError ? openModal : openBadModal}
             className="bg-[#FF4949] text-black py-4 px-8"
           >
             Submit
           </button>
           <Modal showModal={showModal} setShowModal={setShowModal} />
+          <BadModal showBadModal={showBadModal} setShowBadModal={setShowBadModal} />
         </div>
       </form>
     </div>
