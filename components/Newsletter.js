@@ -21,6 +21,8 @@ function About() {
     console.log({ formData });
 
     addDoc(collection(db, "Subscribers"), formData);
+    
+    event.target.reset();
   };
 
   const [showModal, setShowModal] = useState(false);
